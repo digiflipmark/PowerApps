@@ -17,6 +17,6 @@ class MainActivity : AppCompatActivity() {
             Analytics::class.java, Crashes::class.java
         )
 
-        //new feature
+        //new feature change
     }
 }
