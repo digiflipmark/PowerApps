@@ -16,5 +16,7 @@ class MainActivity : AppCompatActivity() {
             application, "159b3e0c-addc-46a0-be66-26aa09b3bb7e",
             Analytics::class.java, Crashes::class.java
         )
+
+        //new feature add
     }
 }
