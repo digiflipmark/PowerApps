@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.ghl.powerapp"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.ghl.powerapp"
-        minSdk = 26
-        targetSdk = 34
+        minSdk = 21
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -31,7 +31,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_7
     }
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = "17"
     }
 }
 
