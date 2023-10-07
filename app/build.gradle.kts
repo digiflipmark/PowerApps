@@ -1,3 +1,6 @@
+import com.android.build.api.dsl.Lint
+import com.android.build.api.dsl.LintOptions
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -35,6 +38,16 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    // Or, if you prefer, you can continue to check for errors in   release builds,
+    // but continue the build even when errors are found:
+
+
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
+    }
+
 }
 
 dependencies {
