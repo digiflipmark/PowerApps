@@ -32,9 +32,11 @@ android {
         }
     }
     compileOptions {
+        isCoreLibraryDesugaringEnabled = true
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    // For Kotlin projects
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -43,10 +45,6 @@ android {
     // but continue the build even when errors are found:
 
 
-    lint {
-        checkReleaseBuilds = false
-        abortOnError = false
-    }
 
 }
 
